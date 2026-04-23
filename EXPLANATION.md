@@ -30,10 +30,10 @@ Memory efficient Works with 10KB sample instead of full matrix
 
 🎯 When to Use
 
-✅ Use SPS-Simpson ❌ Don't Use
+✅ Use SPS-Simpson 
 LLM weights (LLaMA, Mistral, GPT) Random matrices
 Recommendation system matrices Matrices with flat spectrum
-Graphs with exponential decay When you need full accuracy (<0.001%)
+Graphs with exponential decay ❌ Don't Use When you need full accuracy (<0.001%)
 PCA on large datasets When speed is NOT a concern
 
 ---
@@ -139,10 +139,10 @@ print(f"Power law rank: {len(S)}, time: {t:.3f}s")
 
 ⚙️ Speed Presets
 
-Preset Rank Max Time (4096) Error Use Case
-accurate 500 0.69s 0.011% Production compression
-balanced 300 0.31s 0.032% Default, best trade-off
-fast 150 0.13s 0.29% Prototyping, exploration
+Preset Rank Max
+accurate 500 Time (4096) 0.69s Error 0.011% Use CaseProduction compression
+balanced 300 Time (4096) 0.31s Error 0.032% Default, Use Case best trade-off
+fast 150 Time (4096) 0.13s Error 0.29% Use Case Prototyping, exploration
 
 ```python
 # Switch presets easily
