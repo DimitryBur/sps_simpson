@@ -139,10 +139,12 @@ print(f"Power law rank: {len(S)}, time: {t:.3f}s")
 
 ⚙️ Speed Presets
 
-Preset Rank Max
-accurate 500 Time (4096) 0.69s Error 0.011% Use CaseProduction compression
-balanced 300 Time (4096) 0.31s Error 0.032% Default, Use Case best trade-off
-fast 150 Time (4096) 0.13s Error 0.29% Use Case Prototyping, exploration
+
+Preset accurate Rank 500 Time (4096) 0.69s Error 0.011% Use Case Production compression
+
+Preset balanced Rank 300 Time (4096) 0.31s Error 0.032% Default Use Case best trade-off
+
+Preset fast Rank 150 Time (4096) 0.13s Error 0.29% Use Case Prototyping, exploration
 
 ```python
 # Switch presets easily
